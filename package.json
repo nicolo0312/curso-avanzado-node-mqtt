@@ -1,0 +1,27 @@
+{
+  "name": "platziverse-mqtt",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node server.js",
+    "start-dev": "DEBUG=platziverse:* nodemon server.js",
+    "lint": "standard"
+  },
+  "author": "Nicolas Moran",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^3.2.7",
+    "json-schema": "^0.2.3",
+    "mosca": "^2.8.3",
+    "platziverse-db": "file:../platziverse-db",
+    "redis": "^3.1.0"
+  }
+}
